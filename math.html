@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mathimatics</title>
+    <link rel="stylesheet" href="math.css">
+</head>
+<body>
+   
+       
+       <!-- <div class="wrapper">
+            <select name="class" id="class" class="select-box">
+                <option value="JSS 1">JSS 1</option>
+                <option value="JSS 2">JSS 2</option>
+                <option value="JSS 3">JSS 3</option>
+                <option value="SSS 1">SSS 1</option>
+                <option value="SSS 1">SSS 2</option>
+                <option value="SSS 1">SSS 3</option>
+            </select>
+        </div>
+    
+        <p> you selected : <span id="demo"></span> </p>-->
+       <div class="parent">
+        <h2>Select your class below</h2>
+       <div class="dropdown">
+        <input type="text" class="textbox"
+        placeholder="dropdown menu" readonly>
+        <i class="fa-solid fa-caret-down"></i>
+        <div class="option">
+            <div onclick="show('JSS 1')">JSS 1</div>
+            <div onclick="show('JSS 2')">JSS 2</div>
+            <div onclick="show('JSS 3')">JSS 3</div>
+            <div onclick="show('SSS 1')">SSS 1</div>
+            <div onclick="show('SSS 2')">SSS 2</div>
+            <div onclick="show('SSS 3')">SSS 3</div>
+        </div>
+       </div>
+       <p>you selected : <span id="demo"></span></p>
+    </div>
+       <script>
+            // var select = document.getElementById("class");
+           // select.addEventListener("change",function(){
+              //  var val = document.getElementById("class").value;
+               // document.getElementById("demo").innerHTML = select.value ;
+           // });
+
+           function show(anything){
+            document.querySelector('.textbox').value = anything;
+           }
+           var dropdown = document.querySelector('dropdown');
+           dropdown.onclick = function(){
+            dropdown.classList.toggle('active');
+           };
+           var val = document.querySelector('dropdown').value;
+            document.getElementById("demo").innerHTML = value ;
+        </script>
+    
+    
+</body>  
+</html>
